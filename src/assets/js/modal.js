@@ -25,4 +25,3 @@ function launchModal() {
 function closeModal() {
   modalBg.style.display = "none";
 }
-
