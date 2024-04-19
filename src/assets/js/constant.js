@@ -14,6 +14,8 @@ export const ERROR_MESSAGE = {
 // our validation div on a string, it will be injected
 // in the dom if the form is valid
 export const VALIDATION_DIV = `<div class="validation">
-		<span>Merci !</span>
-		<span>Votre réservation a été reçue.</span>
+		<span>Merci pour votre inscription</span>
+		<button class="close-btn">
+          Fermer
+        </button>
 	</div>`
