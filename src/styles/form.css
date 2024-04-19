@@ -7,10 +7,10 @@
 
 .error-message {
 	color: red;
-	font-size: 0.8rem;
+	font-size: 0.625rem;
 	font-weight: 300;
 	display: none;
-	padding: 0.25rem 0;
+	padding: 0.25rem 0 0.1rem;
 	position: relative;
 	width: 100%;
 }
@@ -27,7 +27,6 @@
 form {
 	display: flex;
 	flex-direction: column;
-	gap: 0.5rem;
 }
 
 input:not([type='radio']):not([type='date']):not([type='submit']) {
@@ -70,7 +69,7 @@ input[data-error='true'] {
 }
 
 .validation {
-	height: 85vh;
+	height: 78vh;
 	display: flex;
 	gap: 2rem;
 	text-align: center;
@@ -78,4 +77,16 @@ input[data-error='true'] {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+}
+
+@media screen and (max-width: 800px) {
+	.validation {
+		height: 86vh;
+	}
+}
+
+.validation .close-btn {
+	position: absolute;
+	bottom: 0;
 }

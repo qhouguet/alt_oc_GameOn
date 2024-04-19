@@ -1,4 +1,5 @@
 import { ERROR_MESSAGE, VALIDATION_DIV } from './constant.js'
+import { closeModal } from './modal.js'
 
 // check if a field is checked / valid
 const checkField = (input) => {
@@ -69,5 +70,7 @@ document.querySelector('.btn-submit').addEventListener('click', (event) => {
 	if (checkFields()) {
 		form.style.display = 'none'
 		form.parentNode.insertAdjacentHTML('beforeend', VALIDATION_DIV)
+		const closeBtn = document.querySelector('.close-btn')
+		closeBtn.addEventListener('click', closeModal)
 	}
 })

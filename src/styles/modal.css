@@ -299,6 +299,7 @@ input {
 	transform: rotate(-45deg);
 }
 .btn-submit,
+.close-btn,
 .btn-signup {
 	background: #fe142f;
 	display: block;
@@ -382,7 +383,7 @@ input {
 	font-size: 16px;
 }
 .hero-section {
-	min-height: 93vh;
+	min-height: 75vh;
 	border-radius: 10px;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
@@ -465,7 +466,7 @@ footer {
 	.hero-content {
 		background: #fff;
 		color: #000;
-		padding: 20px;
+		padding: 0;
 		min-width: 0;
 	}
 	.hero-content::after {
@@ -475,12 +476,13 @@ footer {
 		display: none;
 	}
 	.hero-headline {
-		font-size: 3.5rem;
+		font-size: 2.5rem;
 		white-space: normal;
 	}
 	.hero-text {
+		margin-top: 1rem;
 		width: unset;
-		font-size: 1.5rem;
+		font-size: 1rem;
 	}
 	.hero-img img {
 		border-radius: 10px;
@@ -505,4 +507,8 @@ footer {
 	to {
 		opacity: 1;
 	}
+}
+
+.no-scroll {
+	overflow: hidden;
 }
