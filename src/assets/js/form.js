@@ -74,3 +74,4 @@ document.querySelector('.btn-submit').addEventListener('click', (event) => {
 		closeBtn.addEventListener('click', closeModal)
 	}
 })
+
